@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Quicksand:wght@300..700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Quicksand", sans-serif;
+}
+
+.forupcase {
+    text-transform: uppercase;
+}
+
+header {
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 45px;
+
+
+
+    article {
+        display: flex;
+
+        >a {
+            margin-right: 110px;
+            display: flex;
+            align-items: center;
+        }
+
+        form {
+            padding: 20px 25px;
+            background-color: rgb(236, 243, 245);
+            border-radius: 10px;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+
+        }
+
+        form::placeholder {
+            color: #89928E;
+            font-size: 15px;
+            font-family: "Quicksand", sans-serif;
+
+        }
+
+        input {
+            background: none;
+            border: none;
+            padding: 3px;
+            font-family: inherit;
+            width: 357px;
+
+        }
+
+        input:focus {
+            outline: none;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: 2px solid rgb(174, 187, 191);
+            border-radius: 0;
+        }
+
+        button {
+            background-color: #B1CED4;
+            border: none;
+            border-radius: 10px;
+            padding: 20px 30px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 16px;
+            color: #2C3832;
+            cursor: pointer;
+            transition: transform 0.1s;
+        }
+        button:active {
+            transform: scale(0.95);
+        }
+    }
+
+    article:last-child {
+        span {
+            display: flex;
+            align-items: center;
+            margin-right: 21px;
+
+            a {
+                margin-right: 3px;
+            }
+        }
+    }
+}
+
+main {
+    padding-left: 140px;
+
+    section {
+
+
+        article {
+            width: 910px;
+            display: flex;
+            gap: 30px;
+            margin-bottom: 25px;
+
+            .card {
+                background-color: #D8E6E9;
+                border-radius: 15px;
+                text-align: center;
+
+                .img-wrapper {
+                    margin-bottom: 9px;
+                }
+
+
+                >span {
+                    font-size: 17px;
+                    color: black;
+                    font-weight: 500;
+                }
+            }
+
+            .category-wrapper {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 9px 15px 10px 11px;
+
+                >p {
+                    font-size: 12px;
+                    font-weight: 500;
+                }
+
+                .icon-wrapper {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 10px;
+                }
+            }
+
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    padding-left: 140px;
+    margin-bottom: 50px;
+
+
+    section {
+        width: 910px;
+        background-color: #EAF0F0;
+        display: flex;
+        justify-content: space-between;
+        padding: 22px;
+        border-radius: 15px;
+
+        button {
+            background-color: rgb(217, 217, 217);
+            border: none;
+            padding: 20px 45px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.05s ease, transform 0.1s ease;
+        }
+
+        button:active {
+            color: white;
+            background-color: #4A5C2F;
+            transform: scale(0.95);
+            
+        }
+        
+    }
+}
